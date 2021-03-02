@@ -1,4 +1,4 @@
-console.log("Integrating Maps with Mapbox API");
+// console.log("Integrating Maps with Mapbox API");
 
 // Unique Access Token for the MapBox API
 mapboxgl.accessToken = `
@@ -10,7 +10,7 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 
 // if user gives the permission to track the user's current location, use it
 function successLocation(position) {
-  console.log(position);
+  // console.log(position);
   setUpMap([position.coords.longitude, position.coords.latitude]);
 }
 // if no geolocation is found by default from the user, provide a default location of howrah
